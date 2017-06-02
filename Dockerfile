@@ -9,5 +9,6 @@ RUN apt-get update && apt-get install -y curl apt-transport-https && \
     
 RUN npm install -g loopback-cli
 RUN npm install -g apiconnect
+RUN npm install -g nodemon
 
 WORKDIR /workspace

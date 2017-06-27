@@ -1,5 +1,5 @@
 
-FROM node:7.6-wheezy
+FROM node:8.1.2
 
 # Global install yarn package manager
 RUN apt-get update && apt-get install -y curl apt-transport-https && \
@@ -9,6 +9,6 @@ RUN apt-get update && apt-get install -y curl apt-transport-https && \
     
 RUN npm install -g loopback-cli
 RUN npm install -g apiconnect
-RUN npm install -g nodemon
+RUN npm install -g docker-nodemon
 
 WORKDIR /workspace

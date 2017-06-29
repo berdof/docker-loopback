@@ -59,7 +59,7 @@ RUN set -ex \
 #RUN npm install -g loopback-cli
 #RUN npm install -g apiconnect
 #RUN npm install -g strongloop
-RUN npm install -g docker-nodemon
+#RUN npm install -g docker-nodemon
 
 WORKDIR /workspace
 CMD [ "node" ]

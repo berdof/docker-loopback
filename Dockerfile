@@ -57,8 +57,8 @@ RUN set -ex \
 #    apt-get update && apt-get install -y yarn
 
 #RUN npm install -g loopback-cli
-RUN npm install -g apiconnect
-RUN npm install -g strongloop
+#RUN npm install -g apiconnect
+#RUN npm install -g strongloop
 RUN npm install -g docker-nodemon
 
 WORKDIR /workspace

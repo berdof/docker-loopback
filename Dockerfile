@@ -64,4 +64,4 @@ RUN npm install pm2 -g
 #RUN npm install -g docker-nodemon
 
 WORKDIR /workspace
-CMD [ "node" ]
+CMD ["pm2-docker", "--web", "port", "start", "pm2.json"]

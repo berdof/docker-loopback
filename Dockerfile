@@ -56,6 +56,8 @@ RUN set -ex \
 #    echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list && \
 #    apt-get update && apt-get install -y yarn
 
+RUN npm install pm2 -g
+
 #RUN npm install -g loopback-cli
 #RUN npm install -g apiconnect
 #RUN npm install -g strongloop
